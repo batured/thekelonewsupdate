@@ -12,22 +12,85 @@
     <!-- Load Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     
-    <script type="importmap">
-{
-  "imports": {
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/"
-  }
-}
-</script>
-    <!-- Load Main Application Logic -->
-    <script type="module" src="index.js"></script>
+    <!-- Remove the complex importmap for now -->
   </head>
   <body class="bg-gray-50 text-gray-900">
     <div id="root" class="min-h-screen flex flex-col">
-      <!-- App content will be injected here by index.js -->
+      <!-- Temporary content to show something -->
+      <header class="bg-white shadow-sm border-b">
+        <div class="container mx-auto px-4 py-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+              <div class="w-8 h-8 bg-blue-600 rounded-full"></div>
+              <h1 class="text-xl font-bold text-gray-900">Thekelo News</h1>
+            </div>
+            <p class="text-sm text-gray-600">Nigeria's Real-Time Pulse</p>
+          </div>
+        </div>
+      </header>
+
+      <main class="flex-1 container mx-auto px-4 py-8">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-2xl font-bold mb-6">Latest News</h2>
+          
+          <div class="grid gap-6 md:grid-cols-2">
+            <!-- Sample news cards -->
+            <div class="bg-white rounded-lg shadow-md p-6 border">
+              <h3 class="text-lg font-semibold mb-2">Breaking News Story</h3>
+              <p class="text-gray-600 mb-4">This is a sample news article description that would appear in your news feed.</p>
+              <div class="flex items-center justify-between text-sm text-gray-500">
+                <span>2 hours ago</span>
+                <span>Politics</span>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 border">
+              <h3 class="text-lg font-semibold mb-2">Economic Update</h3>
+              <p class="text-gray-600 mb-4">Latest developments in the Nigerian economy and market trends.</p>
+              <div class="flex items-center justify-between text-sm text-gray-500">
+                <span>5 hours ago</span>
+                <span>Economy</span>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 border">
+              <h3 class="text-lg font-semibold mb-2">Sports Highlights</h3>
+              <p class="text-gray-600 mb-4">Recent sports events and team performances across Nigeria.</p>
+              <div class="flex items-center justify-between text-sm text-gray-500">
+                <span>1 day ago</span>
+                <span>Sports</span>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 border">
+              <h3 class="text-lg font-semibold mb-2">Technology News</h3>
+              <p class="text-gray-600 mb-4">Innovations and tech developments in the Nigerian sector.</p>
+              <div class="flex items-center justify-between text-sm text-gray-500">
+                <span>2 days ago</span>
+                <span>Technology</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="bg-gray-800 text-white py-6 mt-8">
+        <div class="container mx-auto px-4 text-center">
+          <p>&copy; 2024 Thekelo News. All rights reserved.</p>
+          <p class="text-gray-400 text-sm mt-2">Nigeria's trusted news source</p>
+        </div>
+      </footer>
     </div>
+
+    <!-- Simple JavaScript initialization -->
+    <script>
+      // Initialize Lucide icons
+      lucide.createIcons();
+      
+      // Add some basic interactivity
+      document.addEventListener('DOMContentLoaded', function() {
+        console.log('Thekelo News loaded successfully');
+      });
+    </script>
   </body>
 </html>
